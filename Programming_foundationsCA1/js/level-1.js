@@ -77,10 +77,10 @@ var foodArray = [
 //task 8
 function whatIDontLike (tastlessGreens)
 {
-    console.log("I don't like greens", tastlessGreens);
+    console.log("I don't like", tastlessGreens);
 };
 
-whatIDontLike ("I dont like greens");
+whatIDontLike ("Greens");
 
 //task 9
 

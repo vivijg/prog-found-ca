@@ -16,6 +16,8 @@ console.log (person);
 
 
 //Task 3
+
+
 var outOfStock = true;
 
 
@@ -29,7 +31,7 @@ else{
 
 //Task 4
 
-var count= (1,2,3,4,5)
+var count= [1,2,3,4,5]
 for (var count=1; count<=5; count++){
 console.log (count);
 }
@@ -49,23 +51,23 @@ if (i===20){
 }
 
 //task 7
-var foodObject = {
-    quantity: 6,
-    name: "apple",
-    color: "red"
-
-    };
-
-    console.log (foodObject.quantity)
-
-
-    if (foodObject.name === true){
-        console.log(foodObject.name);
+var foodArray = [
+    {
+        quantity: 6,
+        name: "apple",
+        inStock: true
+        }, {
+        quantity: 2,
+        name: "orange",
+        inStock: false
         }
-    else{
-        console.log("6 Red apples");
-       }
-  
+    ];
+    
+    foodArray .forEach(function (item) {
+        console.log(item.quantity);
+        console.log(item.inStock);
+    });
+    
     
   
     
@@ -73,12 +75,12 @@ var foodObject = {
 
 
 //task 8
-function whatIDontLike (TastlessGreens)
+function whatIDontLike (tastlessGreens)
 {
-    console.log(TastlessGreens);
+    console.log("I don't like greens", tastlessGreens);
 };
 
-whatIDontLike ("I dont like brokkoli");
+whatIDontLike ("I dont like greens");
 
 //task 9
 
@@ -90,10 +92,13 @@ whatIDontLike ("I dont like brokkoli");
  }
  subtractNumbers (28,8)
 
+
+
+ 
 //task 10
 var emptyArray = [];
-function logToConsole (wineTime){
-console.log (wineTime);
+function addItemToArray (item){
+  emptyArray.push(item);
 }
-
-logToConsole("It is Wine time");
+addItemToArray('Hello array');
+console.log(emptyArray);
